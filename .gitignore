@@ -1,0 +1,15 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+
+# Ignore Mac system files
+.DS_Store
+static/.DS_Store
+**/.DS_Store
+
+# (Optional) If you want to ignore compiled model file too, add line:
+# wildfire_cnn_model.h5
+
+.venv/
+.DS_Store
+**/.DS_Store
