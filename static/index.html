@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EmberWatch</title>
+
+  <!-- Google Fonts -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" 
+    rel="stylesheet"
+  />
+
+  <!-- Important: reference /static/css/style.css -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="company-name">EmberWatch</span>
+    </div>
+    <nav class="nav-right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#" class="search-icon">
+            <!-- Simple search icon (SVG) -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 0 1-.277.664l3.853 3.853
+                   a1 1 0 0 1-1.414 1.414l-3.853-3.853a1 1 0 0
+                   1-.664-.277 6.5 6.5 0 1 1 1.414-1.414zM6.5
+                   11a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="url-text">www.reallygreatsite.com</p>
+      <h1 class="main-heading">EMBERWATCH</h1>
+      <p class="sub-text">AI-Powered Wildfire Detection &amp; Prevention</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section class="info-section">
+      <h2>Conservation &amp; Wildfire Safety</h2>
+      <p>
+        EmberWatch is dedicated to preserving our forests and natural habitats
+        by enabling real-time wildfire detection and alerts. Early detection
+        saves wildlife, resources, and ultimately, lives.
+      </p>
+    </section>
+
+    <section class="placeholder-section">
+      <h2>How It Works</h2>
+      <p>
+        <strong>- Drone / Satellite Imagery</strong> <br/>
+        <strong>- AI Model (Fire/Smoke Detection)</strong> <br/>
+        <strong>- Instant Alerts to Local Authorities</strong> <br/>
+        <strong>- Fire Spread Prediction</strong>
+      </p>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+      <h2>Check Your Image for Fire</h2>
+      <p>Select an image and let our AI analyze it for potential fire.</p>
+
+      <form id="fireCheckForm">
+        <input type="file" id="imageFile" name="imageFile" accept="image/*" required />
+        <button type="submit" class="upload-btn">Detect Fire</button>
+      </form>
+
+      <div id="result-box"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 EmberWatch International Co. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Important: reference /static/js/script.js -->
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
